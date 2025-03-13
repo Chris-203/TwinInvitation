@@ -1,6 +1,8 @@
 "use client";
 
 import { Box, Typography } from "@mui/material";
+import { url } from "inspector";
+import React from "react";
 
 export default function Invite() {
   return (
@@ -12,16 +14,20 @@ export default function Invite() {
           justifyContent: "center",
           display: "flex",
           flexDirection: "column",
-          bgcolor: "maroon", // color of card
+          // bgcolor: "maroon", // color of card
           maxWidth: "100%",
           margin: "auto",
           borderRadius: 2,
           boxShadow: 2,
           padding: 2,
-          width: "80%",
-          height: "80%",
+          width: "100%",
+          height: "100%",
           position: "relative",
           overflow: "visible",
+          // background: `url('/bg/Gold And Black Birthday Party Invitation Portrait.png')`, 
+          backgroundImage: `url('/bg/Gold And Black Birthday Party Invitation Portrait.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <svg
@@ -43,7 +49,7 @@ export default function Invite() {
             />
           </defs>
           <text
-            fill="black"
+            fill="white"
             fontSize="24"
             fontWeight="bold"
             fontFamily="Fresh Palm"
@@ -66,7 +72,7 @@ export default function Invite() {
               fill="transparent"
             />
           </defs>
-          <text fill="black" fontSize="32" fontWeight="bold">
+          <text fill="white" fontSize="32" fontWeight="bold">
             <textPath
               href="#curve"
               startOffset="50%"
@@ -89,6 +95,7 @@ export default function Invite() {
             margin: "auto",
             marginTop: 0,
             marginBottom: -3,
+            color: "white",
           }}
         >
           15
@@ -149,7 +156,7 @@ export default function Invite() {
               fill="transparent"
             />
           </defs>
-          <text fill="black" fontSize="32" fontWeight="bold">
+          <text fill="white" fontSize="32" fontWeight="bold">
             <textPath
               href="#curve"
               startOffset="50%"
@@ -168,25 +175,49 @@ export default function Invite() {
             fontFamily: "Fresh Palm",
             // bgcolor: "red",
             marginTop: 5,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 0.3,
           }}
         >
-          SABADO{" "}
           <Box
-            component="span"
             sx={{
-              width: 80, // Adjust size of circle
-              height: 80,
-              borderRadius: "50%",
-              fontSize: 50,
+              borderTop: "2px solid black",
+              // paddingLeft: 2,
+              // paddingRight: 3,
+              borderBottom:"2px solid black"
+            }}
+          >
+            {" "}
+            SABADO{" "}
+          </Box>{" "}
+          <Box
+            // component="span"
+            sx={{
+              width: 55, // Adjust size of circle
+              height: 55,
+              // borderRadius: "50%",
+              fontSize: 60,
               fontWeight: "bold",
-              lineHeight: "1",
+              lineHeight: ".8",
               // border: "2px solid black",
               // display: 'flex'
             }}
           >
             5
           </Box>{" "}
-          5:00PM
+          <Box
+            sx={{
+              borderTop: "2px solid black",
+              // paddingLeft: 2,
+              // paddingRight: 3,
+              borderBottom:"2px solid black"
+            }}
+          >
+            {" "}
+            5:00PM{" "}
+          </Box>{" "}
         </Typography>
         <Typography
           variant="h4"
