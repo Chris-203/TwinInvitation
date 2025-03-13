@@ -6,7 +6,21 @@ import React from "react";
 
 export default function Invite() {
   return (
-    <Box sx={{ bgcolor: "teal", height: "100vh", display: "flex" }}>
+    <Box sx={{
+      bgcolor: "teal",
+      height: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      overflow: "hidden",
+  
+      "@media (orientation: landscape)": {
+        width: "100vh", // Swap width and height in landscape mode
+        height: "100vw",
+        transform: "rotate(90deg)", // Rotate the content
+        transformOrigin: "center",
+      },
+    }}>
       <Box
         sx={{
           // padding: 5,
@@ -24,22 +38,24 @@ export default function Invite() {
           height: "100%",
           position: "relative",
           overflow: "visible",
-          // background: `url('/bg/Gold And Black Birthday Party Invitation Portrait.png')`,
           backgroundImage: `url('/bg/Gold And Black Birthday Party Invitation Portrait.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <Box sx={{ marginTop: 7 }}>
+          <Box sx={{ }}>
           <svg
             width="100%"
             // height="100%"
             // viewBox="0 50 400 10"
+
             style={{
               position: "relative",
               // top: 70,
               left: 0,
-              // backgroundColor: "red",
+
+              backgroundColor: "red",
             }}
           >
             <defs>
@@ -60,13 +76,12 @@ export default function Invite() {
               </textPath>
             </text>
           </svg>
+          </Box>
           <svg
             width="100%"
             // height="200"
             // viewBox="0 80 400 10"
-            style={{ position: "relative", 
-              top: -100, 
-              left: 0 }}
+            style={{ position: "relative", top: -100, left: 0 }}
           >
             <defs>
               <path
@@ -178,7 +193,7 @@ export default function Invite() {
               fontFamily: "Fresh Palm",
               // bgcolor: "red",
               marginTop: -10,
-              marginRight: -2,
+              // marginRight: -2,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
