@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Typography } from "@mui/material";
-import { url } from "inspector";
+// import { url } from "inspector";
 import React from "react";
 
 export default function Invite() {
