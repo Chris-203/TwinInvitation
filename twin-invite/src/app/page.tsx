@@ -17,7 +17,7 @@ export default function Invite() {
       "@media (orientation: landscape)": {
         width: "100vh", // Swap width and height in landscape mode
         height: "100vw",
-        transform: "rotate(90deg)", // Rotate the content
+        transform: "none", // Rotate the content
         transformOrigin: "center",
       },
     }}>
@@ -55,7 +55,7 @@ export default function Invite() {
               // top: 70,
               left: 0,
 
-              backgroundColor: "red",
+              // backgroundColor: "red",
             }}
           >
             <defs>
