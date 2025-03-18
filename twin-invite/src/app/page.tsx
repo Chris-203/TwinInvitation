@@ -257,7 +257,7 @@ export default function Invite() {
                 // bgcolor: "red"
               }}
             >
-              COL. CENTRO
+              29 POPLAR STREET
             </Typography>
             <Typography
               variant="h4"
@@ -268,7 +268,7 @@ export default function Invite() {
                 // bgcolor: "red"
               }}
             >
-              TEL. 1234567890
+              {/* TEL. 1234567890 */}
             </Typography>
           </Box>
           <Typography
@@ -276,6 +276,7 @@ export default function Invite() {
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
+              marginTop: 10,
               // bgcolor: "red"
             }}
           >
