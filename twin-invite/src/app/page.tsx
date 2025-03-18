@@ -277,6 +277,7 @@ export default function Invite() {
             sx={{
               fontFamily: "Shine in Valentine",
               marginTop: 10,
+              marginBottom: 10,
               // bgcolor: "red"
             }}
           >
