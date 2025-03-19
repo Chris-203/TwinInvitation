@@ -43,7 +43,7 @@ export default function Invite() {
           backgroundPosition: "center",
         }}
       >
-        <Box sx={{ marginTop: 7 }}>
+        <Box sx={{ marginTop: 3 }}>
           <Box sx={{ }}>
           <svg
             width="100%"
