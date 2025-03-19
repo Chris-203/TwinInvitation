@@ -259,7 +259,7 @@ export default function Invite() {
             >
               29 POPLAR STREET
             </Typography>
-            <Typography
+            {/* <Typography
               variant="h4"
               align="center"
               sx={{
@@ -268,16 +268,16 @@ export default function Invite() {
                 // bgcolor: "red"
               }}
             >
-              {/* TEL. 1234567890 */}
-            </Typography>
+              TEL. 1234567890
+            </Typography> */}
           </Box>
           <Typography
             variant="h6"
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
-              marginTop: 10,
-              marginBottom: 10,
+              marginTop: 8,
+              marginBottom: 15,
               // bgcolor: "red"
             }}
           >
