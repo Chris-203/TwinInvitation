@@ -1,34 +1,33 @@
 "use client";
 
 import { Box, Typography } from "@mui/material";
-// import { url } from "inspector";
 import React from "react";
 
 export default function Invite() {
   return (
-    <Box sx={{
-      bgcolor: "teal",
-      height: "100vh",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      overflow: "hidden",
-  
-      "@media (orientation: landscape)": {
-        width: "100vh", // Swap width and height in landscape mode
-        height: "100vw",
-        transform: "none", // Rotate the content
-        transformOrigin: "center",
-      },
-    }}>
+    <Box
+      sx={{
+        bgcolor: "teal",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        overflow: "hidden",
+
+        "@media (orientation: landscape)": {
+          width: "100vh", // Swap width and height in landscape mode
+          height: "100vw",
+          transform: "none", // Rotate the content
+          transformOrigin: "center",
+        },
+      }}
+    >
       <Box
         sx={{
-          // padding: 5,
           alignContent: "center",
           justifyContent: "center",
           display: "flex",
           flexDirection: "column",
-          // bgcolor: "maroon", // color of card
           maxWidth: "100%",
           margin: "auto",
           borderRadius: 2,
@@ -44,43 +43,35 @@ export default function Invite() {
         }}
       >
         <Box sx={{ marginTop: 3 }}>
-          <Box sx={{ }}>
-          <svg
-            width="100%"
-            // height="100%"
-            // viewBox="0 50 400 10"
-
-            style={{
-              position: "relative",
-              // top: 70,
-              left: 0,
-
-              // backgroundColor: "red",
-            }}
-          >
-            <defs>
-              <path
-                id="curve"
-                d="M 50,150 A 150,100 0 0,1 350,150"
-                fill="transparent"
-              />
-            </defs>
-            <text
-              fill="white"
-              fontSize="30"
-              fontWeight="bold"
-              fontFamily="Fresh Palm"
+          <Box sx={{}}>
+            <svg
+              width="100%"
+              style={{
+                position: "relative",
+                left: 0,
+              }}
             >
-              <textPath href="#curve" startOffset="50%" textAnchor="middle">
-                Te invitamos a celebrar nuestro
-              </textPath>
-            </text>
-          </svg>
+              <defs>
+                <path
+                  id="curve"
+                  d="M 50,150 A 150,100 0 0,1 350,150"
+                  fill="transparent"
+                />
+              </defs>
+              <text
+                fill="white"
+                fontSize="30"
+                fontWeight="bold"
+                fontFamily="Fresh Palm"
+              >
+                <textPath href="#curve" startOffset="50%" textAnchor="middle">
+                  Te invitamos a celebrar nuestro
+                </textPath>
+              </text>
+            </svg>
           </Box>
           <svg
             width="100%"
-            // height="200"
-            // viewBox="0 80 400 10"
             style={{ position: "relative", top: -100, left: 0 }}
           >
             <defs>
@@ -107,12 +98,10 @@ export default function Invite() {
             sx={{
               fontWeight: "bold",
               fontFamily: "Fresh Palm",
-              // bgcolor: "red",
               fontSize: 100,
               width: "20%",
               margin: "auto",
               marginTop: -25,
-              // marginBottom: -3,
               color: "white",
             }}
           >
@@ -122,9 +111,7 @@ export default function Invite() {
             variant="h4"
             align="center"
             sx={{
-              // fontWeight: "bold",
               fontFamily: "Shine in Valentine",
-              // bgcolor: "red",
               fontSize: 90,
             }}
           >
@@ -135,7 +122,6 @@ export default function Invite() {
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
-              // bgcolor: "red",
               fontSize: 40,
               height: "6%",
               marginBottom: -1,
@@ -147,9 +133,7 @@ export default function Invite() {
             variant="h4"
             align="center"
             sx={{
-              // fontWeight: "bold",
               fontFamily: "Shine in Valentine",
-              // bgcolor: "red",
               fontSize: 90,
             }}
           >
@@ -158,13 +142,9 @@ export default function Invite() {
 
           <svg
             width="100%"
-            // height="200"
-            // viewBox="0 -10 400 10"
             style={{
               position: "relative",
-              // bottom: 160,
               left: 0,
-              // backgroundColor: "GREEN",
             }}
           >
             <defs>
@@ -191,9 +171,7 @@ export default function Invite() {
             sx={{
               fontWeight: "bold",
               fontFamily: "Fresh Palm",
-              // bgcolor: "red",
               marginTop: -10,
-              // marginRight: -2,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -203,8 +181,6 @@ export default function Invite() {
             <Box
               sx={{
                 borderTop: "2px solid black",
-                // paddingLeft: 2,
-                // paddingRight: 3,
                 borderBottom: "2px solid black",
               }}
             >
@@ -212,16 +188,12 @@ export default function Invite() {
               SABADO{" "}
             </Box>{" "}
             <Box
-              // component="span"
               sx={{
                 width: 55, // Adjust size of circle
                 height: 55,
-                // borderRadius: "50%",
                 fontSize: 60,
                 fontWeight: "bold",
                 lineHeight: ".8",
-                // border: "2px solid black",
-                // display: 'flex'
               }}
             >
               5
@@ -229,8 +201,6 @@ export default function Invite() {
             <Box
               sx={{
                 borderTop: "2px solid black",
-                // paddingLeft: 2,
-                // paddingRight: 3,
                 borderBottom: "2px solid black",
               }}
             >
@@ -243,8 +213,6 @@ export default function Invite() {
               display: "flex",
               flexDirection: "column",
               gap: 0,
-              // margin: 'auto',
-              // bgcolor: 'red'
             }}
           >
             <Typography
@@ -253,23 +221,10 @@ export default function Invite() {
               sx={{
                 fontWeight: "bold",
                 fontFamily: "Fresh Palm",
-                // margin: 'auto',
-                // bgcolor: "red"
               }}
             >
               29 POPLAR STREET
             </Typography>
-            {/* <Typography
-              variant="h4"
-              align="center"
-              sx={{
-                fontWeight: "bold",
-                fontFamily: "Fresh Palm",
-                // bgcolor: "red"
-              }}
-            >
-              TEL. 1234567890
-            </Typography> */}
           </Box>
           <Typography
             variant="h6"
@@ -278,7 +233,6 @@ export default function Invite() {
               fontFamily: "Shine in Valentine",
               marginTop: 8,
               marginBottom: 15,
-              // bgcolor: "red"
             }}
           >
             lluvia de sobres
