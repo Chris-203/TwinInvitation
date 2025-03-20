@@ -11,7 +11,7 @@ export default function Invite() {
   useEffect(() => {
     const updateViewBox = () => {
       if (window.innerWidth < 600) {
-        setViewBoxHeight(100); // Small screens
+        setViewBoxHeight(115); // Small screens
       } else {
         setViewBoxHeight(110); // Large screens
       }
@@ -26,7 +26,7 @@ export default function Invite() {
   return (
     <Box
       sx={{
-        bgcolor: "teal",
+        // bgcolor: "teal",
         height: "100vh",
         display: "flex",
         justifyContent: "center",
@@ -60,7 +60,7 @@ export default function Invite() {
             alignItems: "center",
           }}
         >
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
             <svg
               width="100%"
               viewBox={`0 0 400 ${viewBoxHeight}`}
@@ -90,7 +90,8 @@ export default function Invite() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              // marginTop: -6,
+              width: "100%",
+              marginTop: -4,
             }}
           >
             <svg
@@ -132,7 +133,7 @@ export default function Invite() {
               // width: "100%",
               marginTop: -2,
               color: "white",
-              backgroundColor: "teal",
+              // backgroundColor: "teal",
             }}
           >
             15
@@ -173,7 +174,7 @@ export default function Invite() {
               fontFamily: "Shine in Valentine",
               fontSize: isSmallScreen ? 90 : 90,
               color: "white",
-              // backgroundColor: "maroon",
+              // backgroundColor: "teal",
             }}
           >
             Jovanni
@@ -184,11 +185,11 @@ export default function Invite() {
               display: "flex",
               justifyContent: "center",
               // width: "100%",
-              backgroundColor: "maroon",
-              // marginTop: -3,
+              // backgroundColor: "maroon",
+              marginTop: 2,
             }}
           >
-            <svg width="75%" viewBox="0 0 400 200">
+            <svg width="75%" viewBox="0 20 400 200">
               <defs>
                 <path
                   id="curve3"
@@ -231,6 +232,7 @@ export default function Invite() {
                 borderTop: "2px solid black",
                 borderBottom: "2px solid black",
                 color: "white",
+                marginRight: 1,
               }}
             >
               SABADO
@@ -239,9 +241,9 @@ export default function Invite() {
               sx={{
                 width: isSmallScreen ? 40 : 55,
                 height: isSmallScreen ? 40 : 55,
-                fontSize: isSmallScreen ? 60 : 60,
+                fontSize: isSmallScreen ? 80 : 60,
                 fontWeight: "bold",
-                lineHeight: ".7",
+                lineHeight: ".5",
                 color: "white",
               }}
             >
@@ -252,6 +254,7 @@ export default function Invite() {
                 borderTop: "2px solid black",
                 borderBottom: "2px solid black",
                 color: "white",
+                marginLeft: 1,
               }}
             >
               5:00PM
@@ -265,6 +268,7 @@ export default function Invite() {
               fontWeight: "bold",
               fontFamily: "Fresh Palm",
               color: "white",
+              marginTop: 1,
             }}
           >
             29 POPLAR STREET
