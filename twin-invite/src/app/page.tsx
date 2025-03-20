@@ -75,7 +75,7 @@ export default function Invite() {
               </defs>
               <text
                 fill="white"
-                fontSize={isSmallScreen ? "32" : "32"}
+                fontSize={isSmallScreen ? "30" : "32"}
                 fontWeight="bold"
                 fontFamily="Fresh Palm"
               >
