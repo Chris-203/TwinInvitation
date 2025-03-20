@@ -54,7 +54,7 @@ export default function Invite() {
       >
         <Box
           sx={{
-            marginTop: 3,
+            // marginTop: 3,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -64,7 +64,7 @@ export default function Invite() {
             <svg
               width="100%"
               viewBox={`0 0 400 ${viewBoxHeight}`}
-              style={{ backgroundColor: "teal" }}
+              // style={{ backgroundColor: "teal" }}
             >
               <defs>
                 <path
@@ -96,7 +96,7 @@ export default function Invite() {
             <svg
               width="100%"
               viewBox="0 25 400 50"
-              style={{ backgroundColor: "maroon" }}
+              // style={{ backgroundColor: "maroon" }}
             >
               <defs>
                 <path
@@ -145,7 +145,7 @@ export default function Invite() {
               fontFamily: "Shine in Valentine",
               fontSize: isSmallScreen ? 90 : 90,
               color: "white",
-              backgroundColor: "maroon",
+              // backgroundColor: "maroon",
             }}
           >
             Joseph
@@ -160,7 +160,7 @@ export default function Invite() {
               height: "6%",
               marginBottom: -2,
               color: "white",
-              backgroundColor: "maroon",
+              // backgroundColor: "maroon",
             }}
           >
             Y
@@ -173,7 +173,7 @@ export default function Invite() {
               fontFamily: "Shine in Valentine",
               fontSize: isSmallScreen ? 90 : 90,
               color: "white",
-              backgroundColor: "maroon",
+              // backgroundColor: "maroon",
             }}
           >
             Jovanni
@@ -275,7 +275,7 @@ export default function Invite() {
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
-              marginTop: isSmallScreen ? 10 : 10,
+              // marginTop: isSmallScreen ? 0 : 4,
               marginBottom: 15,
               fontSize: isSmallScreen ? 25 : 30,
               color: "white",
