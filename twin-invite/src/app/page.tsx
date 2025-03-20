@@ -11,9 +11,9 @@ export default function Invite() {
   useEffect(() => {
     const updateViewBox = () => {
       if (window.innerWidth < 600) {
-        setViewBoxHeight(75); // Small screens
+        setViewBoxHeight(100); // Small screens
       } else {
-        setViewBoxHeight(105); // Large screens
+        setViewBoxHeight(110); // Large screens
       }
     };
   
@@ -75,7 +75,7 @@ export default function Invite() {
               </defs>
               <text
                 fill="white"
-                fontSize={isSmallScreen ? "20" : "30"}
+                fontSize={isSmallScreen ? "32" : "32"}
                 fontWeight="bold"
                 fontFamily="Fresh Palm"
               >
@@ -107,7 +107,7 @@ export default function Invite() {
               </defs>
               <text
                 fill="white"
-                fontSize={isSmallScreen ? "24" : "32"}
+                fontSize={isSmallScreen ? "32" : "32"}
                 fontWeight="bold"
               >
                 <textPath
@@ -128,7 +128,7 @@ export default function Invite() {
             sx={{
               fontWeight: "bold",
               fontFamily: "Fresh Palm",
-              fontSize: isSmallScreen ? 60 : 100,
+              fontSize: isSmallScreen ? 90 : 100,
               // width: "100%",
               marginTop: -2,
               color: "white",
@@ -143,7 +143,7 @@ export default function Invite() {
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
-              fontSize: isSmallScreen ? 50 : 90,
+              fontSize: isSmallScreen ? 90 : 90,
               color: "white",
               backgroundColor: "maroon",
             }}
@@ -156,7 +156,7 @@ export default function Invite() {
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
-              fontSize: isSmallScreen ? 30 : 40,
+              fontSize: isSmallScreen ? 50 : 50,
               height: "6%",
               marginBottom: -2,
               color: "white",
@@ -171,7 +171,7 @@ export default function Invite() {
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
-              fontSize: isSmallScreen ? 50 : 90,
+              fontSize: isSmallScreen ? 90 : 90,
               color: "white",
               backgroundColor: "maroon",
             }}
@@ -198,7 +198,7 @@ export default function Invite() {
               </defs>
               <text
                 fill="white"
-                fontSize={isSmallScreen ? "32" : "32"}
+                fontSize={isSmallScreen ? "40" : "40"}
                 fontWeight="bold"
               >
                 <textPath
@@ -239,9 +239,9 @@ export default function Invite() {
               sx={{
                 width: isSmallScreen ? 40 : 55,
                 height: isSmallScreen ? 40 : 55,
-                fontSize: isSmallScreen ? 40 : 60,
+                fontSize: isSmallScreen ? 60 : 60,
                 fontWeight: "bold",
-                lineHeight: ".8",
+                lineHeight: ".7",
                 color: "white",
               }}
             >
@@ -275,7 +275,7 @@ export default function Invite() {
             align="center"
             sx={{
               fontFamily: "Shine in Valentine",
-              marginTop: isSmallScreen ? 4 : 8,
+              marginTop: isSmallScreen ? 10 : 10,
               marginBottom: 15,
               fontSize: isSmallScreen ? 25 : 30,
               color: "white",
