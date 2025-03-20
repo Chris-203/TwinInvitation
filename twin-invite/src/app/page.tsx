@@ -6,14 +6,14 @@ import React, {useState, useEffect} from "react";
 export default function Invite() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
-  const [viewBoxHeight, setViewBoxHeight] = useState(105);
+  const [viewBoxHeight, setViewBoxHeight] = useState(120);
 
   useEffect(() => {
     const updateViewBox = () => {
       if (window.innerWidth < 600) {
-        setViewBoxHeight(115); // Small screens
+        setViewBoxHeight(120); // Small screens
       } else {
-        setViewBoxHeight(110); // Large screens
+        setViewBoxHeight(120); // Large screens
       }
     };
   
@@ -232,7 +232,7 @@ export default function Invite() {
                 borderTop: "2px solid black",
                 borderBottom: "2px solid black",
                 color: "white",
-                marginRight: 1,
+                marginRight: .5,
               }}
             >
               SABADO
