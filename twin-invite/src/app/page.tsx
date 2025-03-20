@@ -6,22 +6,22 @@ import React, {useState, useEffect} from "react";
 export default function Invite() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
-  const [viewBoxHeight, setViewBoxHeight] = useState(120);
+  // const [viewBoxHeight, setViewBoxHeight] = useState(120);
 
-  useEffect(() => {
-    const updateViewBox = () => {
-      if (window.innerWidth < 600) {
-        setViewBoxHeight(120); // Small screens
-      } else {
-        setViewBoxHeight(120); // Large screens
-      }
-    };
+  // useEffect(() => {
+  //   const updateViewBox = () => {
+  //     if (window.innerWidth < 600) {
+  //       setViewBoxHeight(120); // Small screens
+  //     } else {
+  //       setViewBoxHeight(120); // Large screens
+  //     }
+  //   };
   
-    updateViewBox(); // Run on initial load
-    window.addEventListener("resize", updateViewBox);
+  //   updateViewBox(); // Run on initial load
+  //   window.addEventListener("resize", updateViewBox);
   
-    return () => window.removeEventListener("resize", updateViewBox);
-  }, []);
+  //   return () => window.removeEventListener("resize", updateViewBox);
+  // }, []);
 
   return (
     <Box
