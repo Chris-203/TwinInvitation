@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-import React, {useState, useEffect} from "react";
+// import React, {useState, useEffect} from "react";
 
 export default function Invite() {
   const theme = useTheme();
