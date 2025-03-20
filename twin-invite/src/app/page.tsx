@@ -63,7 +63,7 @@ export default function Invite() {
           <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
             <svg
               width="100%"
-              viewBox={`0 0 400 ${viewBoxHeight}`}
+              viewBox={`0 0 400 125`}
               // style={{ backgroundColor: "teal" }}
             >
               <defs>
